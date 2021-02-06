@@ -30,6 +30,8 @@ p {
 }
 footer {
     border-top: 1px solid #d5d5d5;
+    position: absolute;
+    bottom: 0;
     font-size: .8em;
 }
 
