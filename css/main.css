@@ -10,8 +10,8 @@ article h1 {
 
 nav {
     padding-inline-start: 0px;
-    font-size: 18px;
-    margin-block: 120px;
+    font-size: 1.125em;
+    margin-block: 5%;
 }
 
 nav li,
@@ -25,14 +25,13 @@ nav li,
 nav li, 
  footer ul li {
     display: inline;
-    margin-right: 40px;
+    margin-right: 1em;
 }
 
 footer {
     border-top: 1px solid red;
     position: absolute;
-    bottom: 0;
-    font-size: 18px;
+    font-size: 1.125em;
 }
 
 a {
@@ -63,5 +62,5 @@ ul.posts li {
 
 .wrapper {   
     background-color: aliceblue;  /* optional */
-    font-family: 'times new roman', arial, sans-serif;
+    font-family: 'Helvetica', arial, sans-serif;
 }
