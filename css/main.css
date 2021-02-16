@@ -1,3 +1,7 @@
+header {
+    height: inherit;
+}
+
 body {
     margin: 60px auto;
     width: 70%;
@@ -17,9 +21,10 @@ nav {
 nav li,
  footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
+    padding: 10px 0px 10px 0px;
     list-style: none;
     font-weight: bold;
+    width: fit-content;
 }
 
 nav li, 
@@ -29,9 +34,14 @@ nav li,
 }
 
 footer {
-    border-top: 1px solid red;
     position: absolute;
     font-size: 1.125em;
+    width: 31%;
+}
+
+footer ul {
+    border-top: 1px solid red;
+    padding: 10px 0px 10px 0px;
 }
 
 a {
@@ -49,15 +59,6 @@ p,
     font-size: 1.5em;
     line-height: 1.4em;
     color: #333;
-}
-
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
-}
-
-ul.posts li {
-    list-style: none;
 }
 
 .wrapper {   
