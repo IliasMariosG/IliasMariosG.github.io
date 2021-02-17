@@ -24,3 +24,4 @@ Basic information to start with:
 
 A sketch
 
+<img src="my_website_sketch.png">
