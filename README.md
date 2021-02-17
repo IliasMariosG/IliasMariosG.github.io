@@ -22,7 +22,5 @@ Basic information to start with:
 
 - A footer with contact and social media details
 
-:TODO
-
-Add a sketch of page structure to aid visual learners
+A sketch
 
