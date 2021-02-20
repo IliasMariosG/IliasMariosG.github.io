@@ -5,11 +5,12 @@ header {
 body {
     margin: 60px auto;
     width: 70%;
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: aliceblue;
 }
 
 article h1 {
-    font-size: 2em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-size: 1.8em;
 }
 
 nav {
@@ -20,7 +21,6 @@ nav {
 
 nav li,
  footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 10px 0px 10px 0px;
     list-style: none;
     font-weight: bold;
@@ -55,13 +55,7 @@ a:hover {
 
 p,
  aside {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
     font-size: 1.5em;
     line-height: 1.4em;
     color: #333;
-}
-
-.wrapper {   
-    background-color: aliceblue;  /* optional */
-    font-family: 'Helvetica', arial, sans-serif;
 }
