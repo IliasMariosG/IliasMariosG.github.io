@@ -59,3 +59,7 @@ p,
     line-height: 1.4em;
     color: #333;
 }
+
+img#image-social-media__email {
+    padding-bottom: 0.188rem;
+}
