@@ -24,7 +24,7 @@ nav li,
     padding: 10px 0px 10px 0px;
     list-style: none;
     font-weight: bold;
-    width: fit-content;
+    width: auto;
 }
 
 nav li, 
@@ -36,11 +36,12 @@ nav li,
 footer {
     position: absolute;
     font-size: 1.125em;
-    width: 31%;
+    width: 70%;
 }
 
 footer ul {
-    border-top: 1px solid red;
+    border-top: 2px solid red;
+    border-top-width: 0.15rem;
     padding: 10px 0px 10px 0px;
 }
 
@@ -49,8 +50,15 @@ a {
     color: #13578d;
 }
 
-a:hover {
+header nav li a:hover,
+ main section a:hover {
     text-decoration: underline;
+    text-underline-offset: 0.5rem;
+}
+
+img#image-social-media__email:hover,
+img#image-social-media__github:hover {  
+    cursor: pointer; transform: rotate(360deg); transition: all 1.8s ease-in-out 0.2s;
 }
 
 p,
