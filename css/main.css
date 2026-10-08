@@ -1,3 +1,19 @@
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
 header {
     height: inherit;
 }
@@ -5,7 +21,8 @@ header {
 body {
     margin: 60px auto;
     width: 70%;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: "Inter", Helvetica, Arial, sans-serif;
+    font-feature-settings: "cv08" 1, "cv05" 1;
     background-color: aliceblue;
 }
 
@@ -19,6 +36,12 @@ nav {
     margin-block: 5%;
 }
 
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style:none;
+}
+
 nav li,
  footer ul {
     padding: 10px 0px 10px 0px;
@@ -27,9 +50,14 @@ nav li,
     width: auto;
 }
 
-nav li, 
- footer ul li {
+nav li {
     display: inline;
+    margin-right: 1em;
+}
+
+ footer ul li {
+    display: inline-block;
+    vertical-align: middle;
     margin-right: 1em;
 }
 
@@ -53,7 +81,7 @@ a {
 header nav li a:hover,
  main section a:hover {
     text-decoration: underline;
-    text-underline-offset: 0.5rem;
+    text-underline-offset: 0.15rem;
 }
 
 img#image-social-media__email:hover,
@@ -68,6 +96,21 @@ p,
     color: #333;
 }
 
-img#image-social-media__email {
-    padding-bottom: 0.188rem;
+img#image-social-media__email,
+img#image-social-media__github {
+    vertical-align: middle;
+}
+
+main p a {
+    text-decoration: underline;
+}
+
+footer ul li a {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 0;
+}
+
+footer ul li a img {
+    display: block;
 }
