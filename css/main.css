@@ -62,9 +62,9 @@ nav li {
 }
 
 footer {
-    position: absolute;
+    position: static;
     font-size: 1.125em;
-    width: 70%;
+    width: 100%;
 }
 
 footer ul {
@@ -113,4 +113,11 @@ footer ul li a {
 
 footer ul li a img {
     display: block;
+}
+
+@media (max-width: 600px) {
+    body {
+        width: 90%;
+        margin: 24px auto;
+    }
 }
