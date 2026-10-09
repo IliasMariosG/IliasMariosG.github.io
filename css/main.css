@@ -259,3 +259,20 @@ footer ul li a img {
 .site-header nav li:last-child {
     margin-right: 0;
 }
+
+.site-header nav .nav-contact {
+    display: inline-block;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #d8cef8;
+    border-radius: 1.5rem;
+    color: #5737c7;
+}
+
+a:focus {
+    outline: 3px solid #6848db;
+    outline-offset: 3px;
+}
+
+footer a:focus {
+    outline-color: #ffd1b7;
+}
