@@ -183,6 +183,19 @@ footer ul li a img {
     margin-bottom: 0;
 }
 
+.background-copy p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+}
+
+.background-copy aside {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    margin-top: 1.5rem;
+    position: relative;
+    padding-left: 1.25rem;
+}
+
 .skill-cards {
     list-style: none;
     margin: 0;
@@ -340,6 +353,17 @@ footer {
     background-image: linear-gradient(
         140deg, #ffbd9a, #ffc1d1 58%, #dfd0ff
     );
+}
+
+.background-copy aside::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.6em;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #704dc4;
 }
 
 @media (max-width: 900px) {
