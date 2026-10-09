@@ -32,6 +32,7 @@ article h1 {
     font-size: 3.5em;
     line-height: 1.2;
     margin-bottom: 1rem;
+    margin-top: 0;
 }
 
 article h2 {
@@ -159,10 +160,27 @@ footer ul li a img {
     margin-top: 2rem;
     padding: 1.5rem;
     background-color: #f6f4fb;
+    display: flex;
+    align-items: flex-start;
 }
 
 .background-section h2 {
     margin-top: 0;
+    box-sizing: border-box;
+    width: 40%;
+    padding-right: 2rem;
+}
+
+.background-copy {
+    width: 60%;
+}
+
+.background-copy p:first-child {
+    margin-top: 0;
+}
+
+.background-copy p:last-child {
+    margin-bottom: 0;
 }
 
 .skill-cards {
@@ -283,9 +301,13 @@ footer {
     padding: 2rem;
     border-radius: 1.5rem;
     background-color: #352568;
+    background-image: linear-gradient(145deg, #6a43cf, #352568 80%);
+    transform: rotate(-3deg);
     color: #fff;
     box-sizing: border-box;
-    width: 40%;
+    width: 100%;
+    position: relative;
+    z-index: 1;
 }
 
 .intro-art span {
@@ -297,6 +319,27 @@ footer {
 
 .intro-art span:last-child {
     color: #ffd1b7;
+}
+
+.intro-visual {
+    position: relative;
+    isolation: isolate;
+    width: 40%;
+}
+
+.intro-visual::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    width: 12rem;
+    height: 12rem;
+    top: -1.5rem;
+    right: -0.5rem;
+    border-radius: 50%;
+    background-color: #ffe0cd;
+    background-image: linear-gradient(
+        140deg, #ffbd9a, #ffc1d1 58%, #dfd0ff
+    );
 }
 
 @media (max-width: 900px) {
@@ -313,9 +356,30 @@ footer {
         padding-right: 0;
     }
 
-    .intro-art {
+    .intro-visual {
         width: 100%;
         margin-top: 1.5rem;
+    }
+
+    .intro-art {
+        transform: none;
+    }
+
+    .intro-visual::before {
+        display: none;
+    }
+
+    .background-section {
+        display: block;
+    }
+
+    .background-section h2 {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .background-copy {
+        width: 100%;
     }
 }
 
