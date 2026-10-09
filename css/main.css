@@ -298,6 +298,17 @@ footer {
     border-radius: 1rem;
 }
 
+.skill-label {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #5737c7;
+}
+
 .intro-header {
     display: flex;
     align-items: center;
