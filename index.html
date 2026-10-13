@@ -14,7 +14,7 @@
 </head>
 <body >
   <!-- header -->
-  <header class="site-header">
+  <header id="top" class="site-header">
     <a class="home-link" href="/" aria-label="Home">
       <img id ="image-logo_homepage" src="images/android-chrome-192x192.png"
         width="32" height="32" alt="">
@@ -129,29 +129,37 @@
         </li>
       </ul>
     </section>
+    <section id="contact" class="contact-panel" aria-labelledby="contact-title">
+      <h2 id="contact-title">Get in touch</h2>
+      <ul>
+        <li>
+          <a href="mailto:ilias.g@outlook@@com"
+            onclick="this.href=this.href.replace('@@','.')">
+            <img id="image-social-media__email"
+            src="images/email.svg"
+            alt="" width="32" height="32">
+            <span>Email me</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/iliasmariosg"> 
+            <img id="image-social-media__github"
+            src="images/github.svg"
+            alt=""  width="32" height="32">
+            <span>GitHub</span>
+          </a>
+        </li>
+      </ul>
+    </section>
   </main>
-  <!-- footer -->
-  <footer id="contact">
-    <h2>Get in touch</h2>
-    <ul>
-      <li>
-        <a href="mailto:ilias.g@outlook@@com"
-        onclick="this.href=this.href.replace('@@','.')">
-          <img id="image-social-media__email"
-          src="images/email.svg"
-          alt="" width="32" height="32">
-          <span>Email me</span>
-        </a>
-      </li>
-      <li>
-        <a href="https://github.com/iliasmariosg"> 
-          <img id="image-social-media__github"
-          src="images/github.svg"
-          alt=""  width="32" height="32">
-          <span>GitHub</span>
-        </a>
-      </li>
-    </ul>
+  <footer class="site-footer">
+    <p>
+      Ilias<span class="brand-dot" aria-hidden="true">.</span>
+      <span class="footer-description">Data analyst &amp; developer</span>
+    </p>
+    <a href="#top">
+      Back to top <span aria-hidden="true">↑</span>
+    </a>
   </footer>
 </body>
 </html>

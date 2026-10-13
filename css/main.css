@@ -69,7 +69,7 @@ nav ul {
 }
 
 nav li,
- footer ul {
+ .contact-panel ul {
     padding: 10px 0px 10px 0px;
     list-style: none;
     font-weight: bold;
@@ -82,13 +82,13 @@ nav li {
     margin-bottom: 0.5rem;
 }
 
- footer ul li {
+ .contact-panel ul li {
     display: block;
     vertical-align: middle;
     margin-right: 0;
 }
 
-footer {
+.contact-panel {
     position: static;
     font-size: 1.125em;
     width: 100%;
@@ -101,7 +101,7 @@ footer {
     align-items: center;
     justify-content: space-between;
 }
-footer h2 {
+.contact-panel h2 {
     font-size: 2.75rem;
     line-height: 1.12;
     letter-spacing: -0.04em;
@@ -112,18 +112,18 @@ footer h2 {
     padding-right: 2rem;
 }
 
-footer ul {
+.contact-panel ul {
     width: 43%;
     margin: 0;
     padding: 0;
     border-top: 0;
 }
 
-footer a {
+.contact-panel a {
     color: #fff;
 }
 
-footer img {
+.contact-panel img {
     filter: brightness(0) invert(1);
 }
 
@@ -159,7 +159,7 @@ main p a {
     text-decoration: underline;
 }
 
-footer ul li a {
+.contact-panel ul li a {
     display: flex;
     align-items: center;
     vertical-align: middle;
@@ -170,7 +170,7 @@ footer ul li a {
     font-weight: 700;
 }
 
-footer ul li a img {
+.contact-panel ul li a img {
     display: block;
     margin-right: 0.5rem;
 }
@@ -336,13 +336,13 @@ a:focus {
     outline-offset: 3px;
 }
 
-footer a:focus {
+.contact-panel a:focus {
     outline-color: #ffd1b7;
 }
 
 .background-section,
 .skill-card,
-footer {
+.contact-panel {
     border-radius: 1rem;
 }
 
@@ -462,7 +462,7 @@ footer {
     background-color: #704dc4;
 }
 
-footer ul li a:hover {
+.contact-panel ul li a:hover {
     color: #ffd1b7;
 }
 
@@ -508,17 +508,45 @@ footer ul li a:hover {
     color: #5737c7;
 }
 
+.site-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 1.875rem;
+    font-size: 0.8125rem;
+    color: #625e73;
+}
+
+.site-footer p {
+    margin: 0;
+    font-size: inherit;
+    line-height: 1.6;
+    font-weight: 700;
+    color: inherit;
+}
+
+.footer-description {
+    margin-left: 0.875rem;
+    font-weight: 400;
+}
+
+.site-footer a {
+    padding: 0.5rem 0;
+    color: inherit;
+}
+
 @media (max-width: 1000px) {
     .background-section h2,
     .skills-section h2 {
         font-size: 2.125rem;
     }
 
-    footer {
+    .contact-panel {
     padding: 2.375rem;
     }
 
-    footer h2 {
+    .contact-panel h2 {
         font-size: 2.25rem;
     }
     
@@ -573,18 +601,18 @@ footer ul li a:hover {
 }
 
 @media (max-width: 760px) {
-    footer {
+    .contact-panel {
         display: block;
         padding: 1.875rem;
     }
 
-    footer h2 {
+    .contact-panel h2 {
         width: 100%;
         padding-right: 0;
         margin-bottom: 1.5rem;
     }
 
-    footer ul {
+    .contact-panel ul {
         width: 100%;
     }
     
@@ -623,6 +651,16 @@ footer ul li a:hover {
     .skill-symbol {
         margin-bottom: 1.25rem;
     }
+
+    .site-footer {
+        align-items: flex-start;
+    }
+
+    .footer-description {
+        display: block;
+        margin-left: 0;
+        margin-top: 0.25rem;
+    }
 }
 
 @media (max-width: 600px) {
@@ -646,11 +684,11 @@ footer ul li a:hover {
         font-size: 1.875rem;
     }
     
-    footer {
+    .contact-panel {
         padding: 1.5rem;
     }
 
-    footer h2 {
+    .contact-panel h2 {
         font-size: 1.875rem;
     }
 }
