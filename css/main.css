@@ -19,9 +19,8 @@ header {
 }
 
 body {
-    margin: 60px auto;
-    width: 70%;
-    max-width: 74rem;
+    margin: 0;
+    box-sizing: border-box;
     font-family: "Inter", Helvetica, Arial, sans-serif;
     font-feature-settings: "cv08" 1, "cv05" 1;
     color: #25233b;
@@ -79,7 +78,8 @@ nav li,
 nav li {
     display: inline;
     margin-right: 1em;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0;
+    padding: 0;
 }
 
  .contact-panel ul li {
@@ -276,12 +276,16 @@ main p a {
 }
 
 .site-header {
+    border-bottom: 1px solid #eeedf3;
+}
+
+.header-inner {
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid #eeedf3;
+    padding-top: 1.4375rem;
+    padding-bottom: 1.4375rem;
 }
 
 .site-header nav a:hover {
@@ -317,6 +321,7 @@ main p a {
 
 .site-header nav a {
     font-size: 0.875rem;
+    line-height: 1.6;
 }
 
 .site-header nav li:last-child {
@@ -325,7 +330,7 @@ main p a {
 
 .site-header nav .nav-contact {
     display: inline-block;
-    padding: 0.5rem 0.75rem;
+    padding: 0.5625rem 1rem;
     border: 1px solid #d8cef8;
     border-radius: 1.5rem;
     color: #5737c7;
@@ -536,6 +541,15 @@ a:focus {
     color: inherit;
 }
 
+.shell {
+    width: 100%;
+    max-width: 74rem;
+    margin: 0 auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    box-sizing: border-box;
+}
+
 @media (max-width: 1000px) {
     .background-section h2,
     .skills-section h2 {
@@ -601,6 +615,17 @@ a:focus {
 }
 
 @media (max-width: 760px) {
+    .header-inner {
+        flex-wrap: wrap;
+        padding-top: 1.125rem;
+        padding-bottom: 0.75rem;
+    }
+
+    .header-inner nav {
+        width: 100%;
+        margin-top: 0.875rem;
+    }
+
     .contact-panel {
         display: block;
         padding: 1.875rem;
@@ -661,14 +686,14 @@ a:focus {
         margin-left: 0;
         margin-top: 0.25rem;
     }
+
+    .shell {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
 }
 
 @media (max-width: 600px) {
-    body {
-        width: 90%;
-        margin: 24px auto;
-    }
-
     article h1 {
     font-size: 2.5rem;
     }
@@ -690,6 +715,11 @@ a:focus {
 
     .contact-panel h2 {
         font-size: 1.875rem;
+    }
+
+    .shell {
+        padding-left: 1.125rem;
+        padding-right: 1.125rem;
     }
 }
 
@@ -720,4 +750,12 @@ a:focus {
     font-weight: 700;
     color: #5737c7;
     text-decoration: underline;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    img#image-social-media__email:hover,
+    img#image-social-media__github:hover {
+        transform: none;
+        transition: none;
+    }
 }
