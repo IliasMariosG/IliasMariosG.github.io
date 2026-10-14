@@ -93,10 +93,11 @@ nav li {
     position: static;
     font-size: 1.125em;
     width: 100%;
-    margin-top: 3rem;
-    background-color: #352568;
+    margin-top: 0;
+    background-color: #302354;
     color: #fff;
     padding: 3.25rem;
+    border-radius: 1.5rem;
     box-sizing: border-box;
     display: flex;
     align-items: center;
@@ -229,7 +230,7 @@ main p a {
 .skill-card {
     box-sizing: border-box;
     width: 32%;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
     padding: 1.75rem;
 }
 
@@ -262,6 +263,7 @@ main p a {
 
 .skills-section {
     padding-top: 4.875rem;
+    padding-bottom: 4.875rem;
 }
 
 .skills-section h2 {
@@ -345,8 +347,7 @@ a:focus {
     outline-color: #ffd1b7;
 }
 
-.skill-card,
-.contact-panel {
+.skill-card {
     border-radius: 1rem;
 }
 
@@ -516,7 +517,7 @@ a:focus {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 2rem;
+    padding-top: 0;
     padding-bottom: 1.875rem;
     font-size: 0.8125rem;
     color: #625e73;
@@ -555,6 +556,10 @@ a:focus {
     width: 100%;
 }
 
+.contact-section {
+    padding-bottom: 4.25rem;
+}
+
 @media (max-width: 1000px) {
     nav li {
         margin-left: 1.0625rem;
@@ -585,6 +590,7 @@ a:focus {
 @media (max-width: 900px) {
     .skill-card {
         width: 100%;
+        margin-bottom: 1rem;
     }
 
     .intro-header {
@@ -661,6 +667,7 @@ a:focus {
     .contact-panel {
         display: block;
         padding: 1.875rem;
+        border-radius: 1.125rem;
     }
 
     .contact-panel h2 {
@@ -684,6 +691,7 @@ a:focus {
 
     .skills-section {
         padding-top: 3rem;
+        padding-bottom: 3rem;
     }
 
     .skills-heading {
@@ -722,6 +730,10 @@ a:focus {
     .shell {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
+    }
+
+    .contact-section {
+        padding-bottom: 2.25rem;
     }
 }
 
