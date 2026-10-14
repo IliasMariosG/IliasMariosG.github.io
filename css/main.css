@@ -178,7 +178,7 @@ main p a {
 }
 
 .background-section {
-    margin-top: 4.75rem;
+    margin-top: 6.25rem;
     padding: 4.25rem 0;
     background-color: #f6f4fb;
 }
@@ -414,17 +414,18 @@ a:focus {
     position: relative;
     isolation: isolate;
     width: 40%;
-    padding-bottom: 1.625rem;
+    padding: 1.375rem 0.875rem 1.625rem;
+    box-sizing: border-box;
 }
 
 .intro-visual::before {
     content: "";
     position: absolute;
     z-index: 0;
-    width: 12rem;
-    height: 12rem;
-    top: -1.5rem;
-    right: -0.5rem;
+    width: 15rem;
+    height: 15rem;
+    top: 0;
+    right: 0;
     border-radius: 50%;
     background-color: #ffe0cd;
     background-image: linear-gradient(
@@ -565,6 +566,10 @@ a:focus {
         margin-left: 1.0625rem;
     }
 
+    .background-section{
+        margin-top: 4.75rem;
+    }
+
     .background-section h2,
     .skills-section h2 {
         font-size: 2.125rem;
@@ -607,14 +612,6 @@ a:focus {
         margin-top: 1.5rem;
     }
 
-    .intro-art {
-        transform: none;
-    }
-
-    .intro-visual::before {
-        display: none;
-    }
-
     .background-section {
         display: block;
     }
@@ -625,9 +622,7 @@ a:focus {
     }
 
     .background-inner {
-        display: flex;
-        align-items: flex-start;
-        width: 100%;
+        display: block;
     }
 
     .background-copy {
@@ -682,6 +677,30 @@ a:focus {
     
     .intro-header {
         padding-top: 3rem;
+    }
+
+    .intro-visual {
+        max-width: 21.25rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .intro-visual::before {
+        width: 13.125rem;
+        height: 13.125rem;
+    }
+
+    .intro-art {
+        padding: 1.625rem;
+    }
+
+    .intro-art .intro-art-mark {
+        font-size: 2.25rem;
+        margin-top: 0.625rem;
+    }
+
+    .intro-art-label {
+        margin-bottom: 1.125rem;
     }
 
     .background-section {
