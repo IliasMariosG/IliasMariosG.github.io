@@ -77,7 +77,8 @@ nav li,
 
 nav li {
     display: inline;
-    margin-right: 1em;
+    margin-left: 1.5rem;
+    margin-right: 0;
     margin-bottom: 0;
     padding: 0;
 }
@@ -177,10 +178,8 @@ main p a {
 
 .background-section {
     margin-top: 4.75rem;
-    padding: 4.25rem 2rem;
+    padding: 4.25rem 0;
     background-color: #f6f4fb;
-    display: flex;
-    align-items: flex-start;
 }
 
 .background-section h2 {
@@ -262,7 +261,7 @@ main p a {
 }
 
 .skills-section {
-    margin-top: 4.875rem;
+    padding-top: 4.875rem;
 }
 
 .skills-section h2 {
@@ -322,6 +321,7 @@ main p a {
 .site-header nav a {
     font-size: 0.875rem;
     line-height: 1.6;
+    color: #4d4962;
 }
 
 .site-header nav li:last-child {
@@ -345,7 +345,6 @@ a:focus {
     outline-color: #ffd1b7;
 }
 
-.background-section,
 .skill-card,
 .contact-panel {
     border-radius: 1rem;
@@ -369,7 +368,7 @@ a:focus {
 .intro-header {
     display: flex;
     align-items: center;
-    margin-top: 5.5rem;
+    padding-top: 5.5rem;
 }
 
 .intro-copy {
@@ -550,7 +549,17 @@ a:focus {
     box-sizing: border-box;
 }
 
+.background-inner {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+}
+
 @media (max-width: 1000px) {
+    nav li {
+        margin-left: 1.0625rem;
+    }
+
     .background-section h2,
     .skills-section h2 {
         font-size: 2.125rem;
@@ -565,7 +574,7 @@ a:focus {
     }
     
     .intro-header {
-        margin-top: 4rem;
+        padding-top: 4rem;
     }
 
     .skill-card {
@@ -609,12 +618,26 @@ a:focus {
         padding-right: 0;
     }
 
+    .background-inner {
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+    }
+
     .background-copy {
         width: 100%;
     }
 }
 
 @media (max-width: 760px) {
+    .site-header nav a {
+        font-size: 0.8125rem;
+    }
+
+    .site-header nav .nav-contact {
+        padding: 0.4375rem 0.75rem;
+    }
+
     .header-inner {
         flex-wrap: wrap;
         padding-top: 1.125rem;
@@ -624,6 +647,15 @@ a:focus {
     .header-inner nav {
         width: 100%;
         margin-top: 0.875rem;
+    }
+
+    nav ul {
+        margin-left: -1rem;
+    }
+
+    nav li {
+        margin-left: 1rem;
+        margin-bottom: 0.25rem;
     }
 
     .contact-panel {
@@ -642,16 +674,16 @@ a:focus {
     }
     
     .intro-header {
-        margin-top: 3rem;
+        padding-top: 3rem;
     }
 
     .background-section {
         margin-top: 3.25rem;
-        padding: 2.75rem 1.5rem;
+        padding: 2.75rem 0;
     }
 
     .skills-section {
-        margin-top: 3rem;
+        padding-top: 3rem;
     }
 
     .skills-heading {
@@ -695,15 +727,15 @@ a:focus {
 
 @media (max-width: 600px) {
     article h1 {
-    font-size: 2.5rem;
-    }
-
-    .background-section {
-    padding: 2.75rem 1rem;
+        font-size: 2.5rem;
     }
 }
 
 @media (max-width: 380px) {
+    .brand-name {
+        font-size: 1.25rem;
+    }
+
     .background-section h2,
     .skills-section h2 {
         font-size: 1.875rem;
