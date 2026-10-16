@@ -41,7 +41,8 @@ article h2 {
     margin-bottom: 1rem;
 }
 
-.intro-role {
+.intro-role,
+.section-label {
     font-size: 0.75rem;
     font-weight: 700;
     line-height: 1.5;
@@ -69,14 +70,11 @@ nav ul {
 
 nav li,
  .contact-panel ul {
-    padding: 10px 0px 10px 0px;
     list-style: none;
     font-weight: bold;
-    width: auto;
 }
 
 nav li {
-    display: inline;
     margin-left: 1.5rem;
     margin-right: 0;
     margin-bottom: 0;
@@ -85,7 +83,6 @@ nav li {
 
  .contact-panel ul li {
     display: block;
-    vertical-align: middle;
     margin-right: 0;
     padding: 1.3125rem 0;
     line-height: 1.6;
@@ -162,11 +159,6 @@ p,
     color: #333;
 }
 
-img#image-social-media__email,
-img#image-social-media__github {
-    vertical-align: middle;
-}
-
 main p a {
     text-decoration: underline;
 }
@@ -174,7 +166,6 @@ main p a {
 .contact-panel ul li a {
     display: flex;
     align-items: center;
-    vertical-align: middle;
     line-height: 1.5;
     padding: 1.25rem 0;
     border-bottom: 1px solid #6b5e87;
@@ -208,17 +199,6 @@ main p a {
     box-sizing: border-box;
     width: 49%;
     padding-right: 3.25rem;
-}
-
-.section-label {
-    font-size: 0.75rem;
-    font-weight: 700;
-    line-height: 1.5;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: #5737c7;
-    margin-top: 0;
-    margin-bottom: 1.25rem;
 }
 
 .contact-panel .section-label {
@@ -264,6 +244,7 @@ main p a {
     width: 32%;
     margin-bottom: 0;
     padding: 1.75rem;
+    border-radius: 1rem;
 }
 
 .skill-card:nth-child(1) {
@@ -356,10 +337,6 @@ main p a {
     color: #4d4962;
 }
 
-.site-header nav li:last-child {
-    margin-right: 0;
-}
-
 .site-header nav .nav-contact {
     display: inline-block;
     padding: 0.5625rem 1rem;
@@ -375,10 +352,6 @@ a:focus {
 
 .contact-panel a:focus {
     outline-color: #ffd1b7;
-}
-
-.skill-card {
-    border-radius: 1rem;
 }
 
 .skill-label {
@@ -660,19 +633,6 @@ a:focus {
         width: 100%;
         margin-top: 1.5rem;
     }
-
-    .background-section {
-        display: block;
-    }
-
-    .background-section h2 {
-        width: 100%;
-        padding-right: 0;
-    }
-
-    .background-copy {
-        width: 100%;
-    }
 }
 
 @media (max-width: 760px) {
@@ -708,12 +668,6 @@ a:focus {
         display: block;
         padding: 1.875rem;
         border-radius: 1.125rem;
-    }
-
-    .contact-panel h2 {
-        width: 100%;
-        padding-right: 0;
-        margin-bottom: 1.25rem;
     }
 
     .contact-panel ul {
