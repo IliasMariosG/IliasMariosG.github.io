@@ -14,10 +14,6 @@
     font-display: swap;
 }
 
-header {
-    height: inherit;
-}
-
 body {
     margin: 0;
     box-sizing: border-box;
@@ -56,7 +52,6 @@ article h2 {
 nav {
     padding-inline-start: 0px;
     font-size: 1.125em;
-    margin-block: 5%;
 }
 
 nav ul {
@@ -89,7 +84,6 @@ nav li {
 }
 
 .contact-panel {
-    position: static;
     font-size: 1.125em;
     width: 100%;
     margin-top: 0;
