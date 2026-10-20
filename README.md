@@ -4,7 +4,7 @@
 
 ## Visit me
 
-[visit me here, yeah? :)](https://www.iliasgrigoropoulos.tech/)
+[visit me here, yeah? :)](https://www.iliasg.net/)
 
 ---
 
